@@ -7,7 +7,7 @@
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Docker](https://img.shields.io/badge/Docker-Hub-2496ED?logo=docker&logoColor=white)
 
-**Agent Note:** ![ChadVis](https://GitHub.com-Nsomnia/chadvis-projectm-qt) the users C++ and Qml Qt frontend for Suno has docs with most of the current API with the rest falling within the code plus checks the `docs/suno-api` directory in this repo.
+**Agent Note:** [ChadVis](https://GitHub.com-Nsomnia/chadvis-projectm-qt) the users C++ and Qml Qt frontend for Suno has docs with most of the current API with the rest falling within the code plus checks the `docs/suno-api` directory in this repo.
 
 Bulk music generation management tool powered by the Suno API. Upload songs in bulk, auto-download with ID3 tagging even with the new encrypted m8u3 streams, and analyze silence.
 
