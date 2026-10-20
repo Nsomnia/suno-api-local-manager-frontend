@@ -7,9 +7,11 @@
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Docker](https://img.shields.io/badge/Docker-Hub-2496ED?logo=docker&logoColor=white)
 
-Bulk music generation management tool powered by the Suno API. Upload songs from Excel, generate in bulk, auto-download, and analyze silence.
+**Agent Note:** ![ChadVis](https://GitHub.com-Nsomnia/chadvis-projectm-qt) the users C++ and Qml Qt frontend for Suno has docs with most of the current API with the rest falling within the code plus checks the `docs/suno-api` directory in this repo.
 
-**Single service** — no Node.js proxy needed. Connects directly to the Suno API from Python (Clerk JWT auth).
+Bulk music generation management tool powered by the Suno API. Upload songs in bulk, auto-download with ID3 tagging even with the new encrypted m8u3 streams, and analyze silence.
+
+**Single service** — no Node.js proxy needed. Connects directly to the Suno API from your Clerk JWT auth with means of redirecting you to your browser to capture with details and complete the handshake being worked on.
 
 ## Screenshots
 
@@ -42,6 +44,7 @@ Bulk music generation management tool powered by the Suno API. Upload songs from
 - **Cookie helper** — step-by-step guide with animated demo in Settings
 - Swagger UI (`/docs`) with all Suno API endpoints
 - Dynamic model list (automatically loaded from your Suno account)
+- All Suno native features as well as b-side/gated testing, beta, and generally usually unavailable or unexposed features allowed to be used via a parameter override.
 
 ## Requirements
 
@@ -54,8 +57,8 @@ Bulk music generation management tool powered by the Suno API. Upload songs from
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/serkansmg/SunoApiManager.git
-cd SunoApiManager
+git clone https://github.com/Nsomnia/TODO-Fill-in-this-repos-name.git
+cd this-repos-name-dir
 ```
 
 ### 2. Quick Setup (recommended)
@@ -68,7 +71,7 @@ chmod +x install.sh
 ```
 
 This will automatically:
-1. Install **Miniconda** if conda is not found (macOS & Linux)
+1. Install **Miniconda** if conda is not found (macOS & Linux). TODO: venv as primary
 2. Create a conda environment `suno-manager` with Python 3.12
 3. Install **ffmpeg** via conda-forge
 4. Install Python dependencies from `requirements.txt`
@@ -113,6 +116,8 @@ mkdir -p downloads uploads logs
 ```
 
 ### Alternative: Docker
+
+TODO: Remove all Docker logic
 
 ```bash
 docker compose up -d
